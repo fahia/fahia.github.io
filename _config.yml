@@ -1,0 +1,53 @@
+# Site
+name: "fahia"
+title:
+description:
+meta_description: "Tech, Health, and everything in between."
+logo:
+favicon:
+google_analytics: 'UA-46264021-4'
+disqus: 'fahia'
+mailchimp-list:
+include: ["_pages"]
+permalink: /:title/
+
+# Authors
+authors:
+  fahia:
+    name: Fahia
+    display_name: Fahia
+    gravatar: 0f2c19568df4f985eed05dc85064798f
+    email: fahia.moh1@gmail.com
+    web: fahia.ca
+    twitter:
+    description:
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
+
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: '/category/:name/'
+
+# Pagination 
+paginate: 6
+paginate_path: /page:num/
+
+# Other
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
